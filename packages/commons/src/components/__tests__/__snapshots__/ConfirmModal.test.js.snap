@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ConfirmModal should render ConfirmModal with isDangerous being passed as true 1`] = `
+<BaseModal
+  body={
+    <p>
+      sample body
+    </p>
+  }
+  centered={false}
+  closable={false}
+  disablePrimaryButton={false}
+  disableSecondaryButton={false}
+  footerType="double"
+  headerText="Confirmation"
+  id="modal-confirm"
+  onClickPrimaryButton={[Function]}
+  onClickSecondaryButton={[Function]}
+  primaryButtonText="YES"
+  primaryButtonVariant="negative"
+  secondaryButtonText="NO"
+  secondaryButtonVariant="secondary"
+  showFooter={true}
+  showHeader={true}
+  size="small"
+/>
+`;
+
+exports[`components/ConfirmModal should render successfully 1`] = `
+<BaseModal
+  body={
+    <p>
+      sample body
+    </p>
+  }
+  centered={false}
+  closable={false}
+  disablePrimaryButton={false}
+  disableSecondaryButton={false}
+  footerType="double"
+  headerText="Confirmation"
+  id="modal-confirm"
+  onClickPrimaryButton={[Function]}
+  onClickSecondaryButton={[Function]}
+  primaryButtonText="YES"
+  primaryButtonVariant="primary"
+  secondaryButtonText="NO"
+  secondaryButtonVariant="secondary"
+  showFooter={true}
+  showHeader={true}
+  size="small"
+/>
+`;

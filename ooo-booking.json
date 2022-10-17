@@ -1,0 +1,204 @@
+{
+  "uuid": "12affde3-ae6f-40a9-8837-5443b91615c4",
+  "lastMigration": 19,
+  "name": "Ooo booking",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 8081,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "a496d086-85e5-41b9-a92d-0748d7d8eb03",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "users/sign-in",
+      "responses": [
+        {
+          "uuid": "56b56b20-2288-4758-bf87-e9f4c3ba7a67",
+          "body": "{\n  \"access_token\": \"aasdasdasd\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "1b0ae4ed-7865-46b5-a6fd-afaabfbebb99",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users",
+      "responses": [
+        {
+          "uuid": "9dd0fae1-d77e-42f7-827b-a8a8fc838d2d",
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"user 1\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"user 2\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "7027614e-f307-4746-9971-f698f4ed084c",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users/me",
+      "responses": [
+        {
+          "uuid": "33eb1692-b0e6-4178-bdaf-fda99efbd76a",
+          "body": "{\n  \"id\": 1,\n  \"name\": \"User\",\n  \"leader\": {\n    \"name\": \"Thang\"\n  },\n  \"roles\": [\"user\", \"admin\", \"leader\"],\n  \"phone\": \"123\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "779fb017-0264-44ba-b43c-e3ed1ea9a8f8",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users/me/ooo-requests",
+      "responses": [
+        {
+          "uuid": "5b880ec7-9540-4f1d-aa5f-7319ecadd51d",
+          "body": "[\n  {\n    \"id\": 1,\n    \"user\": {\n      \"name\": \"Thang\"\n    },\n    \"startDate\": \"11-11-2011\",\n    \"endDate\": \"11-11-2011\",\n    \"purpose\": \"blablabla kjdna skdnajs dnasb dajsbd jasbd jasbd abs jdabsjhd absjdbajsdbajsbd ajsb dja bsdjabsjdaskd nask dnaskd naksn dkasnd a skjdnaksdnasjkd naksnd kjasn dknaskj dnajksn dkjasnk jdnasknd jasnd kjansd kasndk \",\n    \"status\": \"rejected\",\n    \"reject_reason\": \"okokokok asdkjnaskjdnaksj ndaksn dkasn dkansdk naks dkn asd kask dnaks ndkasnd kjasnd asnk dnakjsd\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "e44a1263-1a5f-42f9-9060-867589fc2154",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "ooo-requests",
+      "responses": [
+        {
+          "uuid": "65c3820a-2be8-407f-a111-14f5a6a29951",
+          "body": "[\n  {\n    \"id\": 1,\n    \"user\": {\n      \"name\": \"Thang\"\n    },\n    \"startDate\": \"11-11-2011\",\n    \"endDate\": \"11-11-2011\",\n    \"purpose\": \"blablabla kjdna skdnajs dnasb dajsbd jasbd jasbd abs jdabsjhd absjdbajsdbajsbd ajsb dja bsdjabsjdaskd nask dnaskd naksn dkasnd a skjdnaksdnasjkd naksnd kjasn dknaskj dnajksn dkjasnk jdnasknd jasnd kjansd kasndk \",\n    \"status\": \"rejected\",\n    \"reject_reason\": \"okokokok asdkjnaskjdnaksj ndaksn dkasn dkansdk naks dkn asd kask dnaks ndkasnd kjasnd asnk dnakjsd\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "27acb49c-79d1-4b93-b5b3-f815711bb4e3",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users/me/mentees/ooo-requests",
+      "responses": [
+        {
+          "uuid": "41c8e600-8641-48a1-a7f5-7d1a38dd107c",
+          "body": "[\n  {\n    \"id\": 1,\n    \"start_date\": \"2022-08-25\",\n    \"end_date\": \"2022-08-25\",\n    \"leader\": {\n      \"name\": \"Thang\"\n    },\n    \"purpose\": \"Sick\",\n    \"status\": \"approval_waiting\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "*"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}

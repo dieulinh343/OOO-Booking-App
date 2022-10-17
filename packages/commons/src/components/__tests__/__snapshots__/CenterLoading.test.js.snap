@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/CenterLoading should render successfully 1`] = `
+<div
+  className="u-positionAbsolute u-positionFull u-flex u-alignContentCenter u-justifyContentCenter"
+>
+  <div
+    className="u-flex u-alignItemsCenter u-justifyContentCenter u-flexColumn"
+  >
+    <div
+      className="u-flexShrink-0"
+    >
+      <Loader
+        duration={2000}
+        size="large"
+      />
+    </div>
+    <div
+      className="u-textLight u-marginTopMedium"
+    >
+      The system is processing. Please wait…
+    </div>
+  </div>
+</div>
+`;

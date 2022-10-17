@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ModalContainer should render modal container successfully 1`] = `
+<ConfirmModal
+  bodyText="sample body text"
+  onConfirm={[MockFunction]}
+  onModalClose={[Function]}
+/>
+`;
+
+exports[`components/ModalContainer should show nothing when displayModal props is empty 1`] = `""`;

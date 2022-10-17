@@ -1,0 +1,607 @@
+:root {
+  --colorPrimary400: #2c4ab8;
+}
+
+
+.customInput {
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.customInput.customSizeTiny:disabled {
+  background: transparent;
+}
+
+.customInput.customSizeTiny {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 0;
+  height: auto;
+}
+
+.customInput:focus {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.customInput.customSizeTiny:focus,
+.customInput.customSizeSmall:focus {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.customTd.customSizeSmall {
+  padding: 0.5rem;
+  min-height: calc(0.125rem * 2 + 1.5rem);
+}
+
+.customCollapseBorderBottom > *:not(:last-child) {
+  border-bottom-width: 0;
+}
+
+/* This to make the message list take up 100% space even when there're a few */
+div[data-rbd-droppable-id="droppable"] {
+  min-height: 100%;
+}
+
+input.passwordInput {
+  -webkit-text-security: disc;
+}
+
+.customBackgroundUltraLightOnHover:hover {
+  background-color: #ebecf0;
+}
+
+path.edge {
+  fill: none;
+  stroke-width: 4;
+  stroke-opacity: 0.4;
+}
+
+path.edge.highlight {
+  stroke-width: 8 !important;
+  stroke-opacity: 1 !important;
+  stroke: #091e42 !important;
+}
+
+g.user rect {
+  stroke-width: 4px;
+  fill: white !important;
+}
+
+g.user.active rect {
+  stroke: #091e42 !important;
+  fill: #ffc400 !important;
+}
+
+g.user.highlight rect {
+  stroke: #091e42 !important;
+  fill: #ffc400 !important;
+}
+
+g.user text {
+  fill: black !important;
+}
+
+g.agent rect {
+  stroke-width: 0;
+}
+
+g.agent.active rect {
+  fill: #091e42 !important;
+  stroke: #091e42 !important;
+}
+
+g.agent.active text {
+  fill: #ffc400 !important;
+}
+
+g.agent.highlight rect {
+  fill: #091e42 !important;
+  stroke: #091e42 !important;
+}
+
+g.agent.highlight text {
+  fill: #ffc400 !important;
+}
+
+.Slider-tooltip {
+  z-index: 1001;
+}
+
+g.bubbles circle.depth2:hover {
+  stroke-width: 2px;
+  stroke: black;
+}
+g.bubbles circle.depth1:not(.standalone):hover {
+  fill: white;
+}
+
+.observablehq > style:only-child {
+  display: none !important;
+}
+
+[data-name="transform-wrapper-container"] .react-transform-component {
+  display: flex;
+  flex-grow: 1;
+  width: auto !important;
+  height: auto !important;
+}
+
+[data-name="wordcloud-group-item"].button-jittery {
+  animation: jittery 3s;
+}
+
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
+}
+.customTooltip-phrase {
+  z-index: 1033;
+}
+
+.customTooltip-SAILHeader.Tooltip--bottom,
+.customTooltip-SAILHeader.Tooltip[x-placement^="bottom"] {
+  margin-top: 12px;
+}
+
+.customStriped {
+  background-image: linear-gradient(
+    315deg,
+    rgba(0, 0, 0, 0.07) 25%,
+    transparent 0px,
+    transparent 50%,
+    rgba(0, 0, 0, 0.07) 0px,
+    rgba(0, 0, 0, 0.07) 75%,
+    transparent 0px,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
+
+.BubbleChat.deletedMessage .Avatar {
+  opacity: 0.25;
+}
+
+.BubbleChat.deletedMessage .BubbleChat-text {
+  opacity: 0.25;
+}
+
+/* react-split-pane resizer */
+/* duplicated class names increase specificity */
+.customResizer.customResizer.customResizer.Resizer {
+  all: initial;
+
+  position: relative;
+  transform: translateZ(0px);
+  background-color: #f4f5f7;
+  width: 16px;
+  display: block;
+  height: 100%;
+  cursor: ew-resize;
+  z-index: 50;
+}
+
+.customResizer.customResizer.customResizer.Resizer::before {
+  all: initial;
+
+  cursor: ew-resize;
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin-left: -4px;
+  width: 24px;
+  z-index: 49;
+}
+
+.customResizer.customResizer.customResizer.Resizer::after {
+  all: initial;
+
+  content: "";
+  display: flex;
+  background: #dfe1e6;
+  border-radius: 50px;
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  top: calc(50% - 20px);
+  margin-left: 6px;
+  opacity: 1;
+
+  transition: height 0.1s ease-in-out, background 0.1s ease-in-out, top 0.1s ease-in-out;
+}
+.customResizer.customResizer.customResizer.Resizer:hover::after {
+  background: #b3bac5;
+  height: 50px;
+  top: calc(50% - 25px);
+}
+
+/* react-split-pane resizer */
+.Resource-article h1 {
+  font-size: 32px;
+}
+
+.Resource-article h2 {
+  font-size: 24px;
+}
+
+.Resource-article h3 {
+  color: var(--colorPrimary);
+  font-size: 18px;
+}
+
+.Resource-article h4 {
+  font-size: 16px;
+}
+
+.Resource-article h5 {
+  font-size: 14px;
+}
+
+.Resource-article ol,
+.Resource-article ul,
+.Resource-article p {
+  font-size: 14px;
+}
+
+.Resource-article ol li,
+.Resource-article ul li {
+  margin-bottom: 8px;
+}
+
+.Resource-article ol li ol,
+.Resource-article ol li ul,
+.Resource-article ul li ol,
+.Resource-article ul li ul {
+  margin-top: 8px;
+}
+
+.Resource-article p img {
+  max-width: 100%;
+  text-align: center;
+}
+
+.Resource-article p img + em {
+  text-align: center;
+  display: block;
+}
+
+.Resource-article strong strong {
+  color: var(--colorNegative);
+  font-weight: normal;
+}
+.Resource-article strong > em,
+.Resource-article em > strong,
+.Resource-article b > i,
+.Resource-article i > b {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+/* Hide scroll bar */
+.hiddenScrollBar::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hiddenScrollBar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Hide scroll bar */
+
+td.indicated {
+  outline: 2px solid #21388b;
+}
+
+g.step3-user rect {
+  stroke-width: 4px;
+}
+
+g.step3-agent rect {
+  stroke-width: 4px;
+}
+
+[name="context-formula"]::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+[name="context-formula"]:-moz-placeholder {
+  font-style: italic;
+}
+
+[name="context-formula"]::-moz-placeholder {
+  font-style: italic;
+}
+
+[name="context-formula"]:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.u-cursorAuto {
+  cursor: auto;
+}
+
+.u-borderDark,
+.hover\:u-borderDark:hover {
+  border-color: #172b4d;
+}
+
+.hover\:u-borderSmall:hover {
+  border-width: 2px;
+}
+
+.Avatar--small svg.icon-extraSmall {
+  width: 16px;
+  height: 16px;
+}
+
+a.headerLink:hover {
+  color: #97a0af;
+}
+
+a.headerLink:link {
+  text-decoration: none;
+}
+
+.custom-letterSpacing8 {
+  letter-spacing: 0.08em;
+}
+
+@keyframes animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-fadeInHalf {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.custom-fadeIn {
+  animation: animation-fadeIn 1s;
+}
+
+.custom-fadeInHalf {
+  animation: animation-fadeInHalf 0.5s;
+}
+
+.custom-fadeInFaster {
+  animation: animation-fadeIn 0.5s;
+}
+
+/* top 300ms,  */
+/* Autoflows Steps */
+.AutoflowsStep {
+  transition: max-height 300ms, min-height 300ms, opacity 300ms, background-color 300ms;
+}
+.BottomPanelItem {
+  transition: max-height 300ms, min-height 300ms, opacity 300ms, background-color 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* React Flow for Autoflows */
+.react-flow__pane {
+  cursor: move;
+}
+
+.react-flow__node {
+  cursor: default;
+}
+
+.react-flow__node {
+  transition: transform 0.2s ease;
+}
+
+.custom-showOnParentHover {
+  opacity: 0;
+}
+
+.custom-hideOnParentHover {
+  opacity: 1;
+}
+
+.custom-hoverParent:hover .custom-showOnParentHover {
+  opacity: 1;
+}
+
+.custom-hoverParent:hover .custom-hideOnParentHover {
+  opacity: 0;
+}
+
+.react-flow__node-inner--normal {
+  border-width: 1px;
+  padding: 1px;
+}
+
+.react-flow__node-inner--bold {
+  border-width: 2px;
+  padding: 0;
+}
+
+.hover\:react-flow__node-inner--bold:hover {
+  border-width: 2px;
+  padding: 0;
+}
+
+/* .react-flow__edge-path-selector:hover + .react-flow__edge-path, .react-flow__edge-path:hover  { */
+/*   stroke: #555; */
+/*   cursor: pointer; */
+/*   stroke-width: 1; */
+/* } */
+.react-flow__edge-path-selector {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 28;
+  cursor: pointer;
+}
+
+.Toggle--small {
+  height: 1rem;
+  width: 2rem;
+}
+
+.Toggle--small .Toggle-handle {
+  height: 0.85rem;
+  top: 0.07rem;
+  width: 0.85rem;
+  left: 0.1rem;
+}
+
+.Toggle--small.checked > .Toggle-handle {
+  left: 1.125rem;
+}
+
+/* Use this class to mask input text with dots, as a substitution for type="password"
+--> To ignore browser "Save your password" feature
+*/
+.custom-textPassword {
+  -webkit-text-security: disc;
+}
+
+.FormInput-readOnly {
+  background-color: #fafbfc !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .custom-breakWord {
+    flex-direction: column;
+  }
+}
+
+.customDisableEventsButHover:active {
+  pointer-events: none;
+}
+
+.u-userSelectNone {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.u-childrenTextTransparent * {
+  color: transparent !important;
+}
+
+.Table--no--bordered {
+  margin: 0;
+}
+
+.Table--no--bordered td::after {
+  height: 0px;
+}
+
+.Table--no--bordered td:first-child {
+  display: block;
+  margin: 0.75rem;
+  padding: 0;
+}
+
+.Table--no--bordered th::before {
+  height: 1px !important;
+}
+
+.Table--no--bordered th::after {
+  height: 0 !important;
+}
+/*
+  HACK: bottom panel node should higher than other nodes
+  Cause: normal nodes have z-index = 3, focusing nodes have z-index = 10. Sometimes bottom panel node is not focused.
+*/
+.react-flow__node-bottom_panel {
+  z-index: 11 !important;
+}
+
+.custom-disableReactFlowInteractions .react-flow__node,
+.custom-disableReactFlowInteractions .react-flow__edge {
+  pointer-events: none !important;
+}
+
+.react-daterange-picker__inputGroup {
+  pointer-events: none;
+  padding: 0 5px;
+}
+
+.react-calendar__navigation {
+  display: flex;
+}
+
+.showTooltipInModal {
+  z-index: 1050;
+}
+
+.FaqPhraseItem {
+  max-height: 150px;
+}
+.FaqPhraseItem-exit-active {
+  opacity: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease-out, max-height 500ms ease-out, padding 0ms 300ms;
+  pointer-events: none;
+}
+
+.custom-autoflowsDraggedNode .autoflowsNodeTitle {
+  color: #DFE1E6;
+}
+
+/* Since we reference svg icons using <img> tag to cache them, it's not possible to manipulate icons' color using fill or color. Using filter is a workaround for it. */
+.custom-autoflowsDraggedNode .autoflowsNodeTitle img {
+  filter: grayscale(1) brightness(1%) invert(93%) sepia(5%) saturate(160%) hue-rotate(185deg) contrast(89%);
+}
+
+.custom-autoflowsDraggedNode .autoflowsNodeName {
+  background-color: #DFE1E6;
+}
+
+/* overriding css for react-flow-renderer: flow control buttons component*/
+.react-flow__controls-button {
+  height: 24px !important;
+  width: 24px !important;
+  border: 1px solid #DFE1E6 !important;
+  border-radius: 8px !important;
+}
+
+/* overriding css for react-flow-renderer: flow controls component*/
+.react-flow__controls {
+  left: 16px !important;
+  bottom: 16px !important;
+  box-shadow: 'none' !important;
+}

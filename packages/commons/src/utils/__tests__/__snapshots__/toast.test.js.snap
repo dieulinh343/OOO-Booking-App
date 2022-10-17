@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/toast should toast error with 1 arg correctly 1`] = `
+<div
+  className="u-flex u-flexGrow-1"
+>
+  <div
+    className="u-marginRightExtraSmall"
+  >
+    <Icon
+      name="alert"
+      size="medium"
+    />
+  </div>
+  <div
+    className="u-flexGrow-1"
+  >
+    <div
+      className="u-fontMedium u-marginBottomExtraSmall"
+    >
+      Oops
+    </div>
+    <div
+      className="u-textWordBreak"
+    >
+      <span
+        style={
+          Object {
+            "whiteSpace": "pre-line",
+          }
+        }
+      >
+        An error
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`utils/toast should toast error with 2 args correctly 1`] = `
+<div
+  className="u-flex u-flexGrow-1"
+>
+  <div
+    className="u-marginRightExtraSmall"
+  >
+    <Icon
+      name="alert"
+      size="medium"
+    />
+  </div>
+  <div
+    className="u-flexGrow-1"
+  >
+    <div
+      className="u-fontMedium u-marginBottomExtraSmall"
+    >
+      An error
+    </div>
+    <div
+      className="u-textWordBreak"
+    >
+      <span
+        style={
+          Object {
+            "whiteSpace": "pre-line",
+          }
+        }
+      >
+        Hey
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`utils/toast should toast error with none argument correctly 1`] = `
+<div
+  className="u-flex u-flexGrow-1"
+>
+  <div
+    className="u-marginRightExtraSmall"
+  >
+    <Icon
+      name="alert"
+      size="medium"
+    />
+  </div>
+  <div
+    className="u-flexGrow-1"
+  >
+    <div
+      className="u-fontMedium u-marginBottomExtraSmall"
+    >
+      Oops
+    </div>
+    <div
+      className="u-textWordBreak"
+    >
+      <span
+        style={
+          Object {
+            "whiteSpace": "pre-line",
+          }
+        }
+      >
+        Something went wrong.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`utils/toast should toast success correctly 1`] = `
+<div
+  className="u-flex u-flexGrow-1"
+>
+  <div
+    className="u-marginRightExtraSmall"
+  >
+    <Icon
+      name="checkmarkCircle"
+      size="medium"
+    />
+  </div>
+  <div
+    className="u-flexGrow-1"
+  >
+    <div
+      className="u-fontMedium u-marginBottomExtraSmall"
+    >
+      From the other side
+    </div>
+    <div
+      className="u-textWordBreak"
+    >
+      <span
+        style={
+          Object {
+            "whiteSpace": "pre-line",
+          }
+        }
+      >
+        Hello
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`utils/toast should toast success with array of contents correctly 1`] = `
+<div
+  className="u-flex u-flexGrow-1"
+>
+  <div
+    className="u-marginRightExtraSmall"
+  >
+    <Icon
+      name="checkmarkCircle"
+      size="medium"
+    />
+  </div>
+  <div
+    className="u-flexGrow-1"
+  >
+    <div
+      className="u-fontMedium u-marginBottomExtraSmall"
+    >
+      Success
+    </div>
+    <div
+      className="u-textWordBreak"
+    >
+      <div
+        className="u-marginBottomExtraSmall"
+        key="From the other side"
+      >
+        From the other side
+      </div>
+      <div
+        className="u-marginBottomExtraSmall"
+        key="And this side"
+      >
+        And this side
+      </div>
+    </div>
+  </div>
+</div>
+`;

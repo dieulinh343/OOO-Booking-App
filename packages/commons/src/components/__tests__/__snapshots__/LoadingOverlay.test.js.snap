@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/LoadingOverlay should render successfully 1`] = `
+<div
+  className="u-positionAbsolute u-positionFull u-zIndex3"
+>
+  <div
+    className="u-positionAbsolute u-positionFull u-backgroundWhite u-opacityThreeQuarter"
+  />
+  <CenterLoading
+    duration={1500}
+    hideText={false}
+    size="100"
+    text="sample text"
+  />
+</div>
+`;

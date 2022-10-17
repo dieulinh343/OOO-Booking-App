@@ -1,0 +1,104 @@
+{
+  "name": "@ooo-booking/commons",
+  "version": "1.0.0",
+  "description": "",
+  "sideEffects": false,
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c",
+    "postinstall": "npm run build",
+    "test": "../../node_modules/.bin/jest --watch",
+    "test:cov": "../../node_modules/.bin/jest --watchAll=false --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ahaui/react": "2.1.0"
+  },
+  "peerDependencies": {
+    "react": "17.x"
+  },
+  "devDependencies": {},
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "automock": false,
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ],
+    "setupFiles": [
+      "../../node_modules/react-app-polyfill/jsdom",
+      "../../package-webpack/config/jest/setup"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}",
+      "<rootDir>/tests/**/?(*.)(spec|test).{js,jsx,mjs}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "../../package-webpack/config/jest/babelTransform.js",
+      "^.+\\.css$": "../../package-webpack/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "../../package-webpack/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+  ],
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "reporters": [
+      "default",
+      [
+        "../../node_modules/jest-html-reporter",
+        {
+          "pageTitle": "commons Unit Tests",
+          "includeConsoleLog": true,
+          "includeFailureMsg": true,
+          "outputPath": "jest-report.html"
+        }
+      ]
+    ]
+  },
+  "nyc": {
+    "report-dir": "cypress-coverage",
+    "exclude": [
+      "src/**/*.d.ts",
+      "src/components/CustomIcon.js",
+      "src/components/DisconnectModal.js",
+      "src/components/DropFileContainer.js",
+      "src/components/FileTemplate.js",
+      "src/components/Pagination.js"
+    ]
+  }
+}

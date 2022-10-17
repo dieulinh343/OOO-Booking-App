@@ -1,0 +1,18 @@
+# Old build files
+/hooks.js
+/hooks.js.map
+/middlewares.js
+/middlewares.js.map
+/utils.js
+/utils.js.map
+/components.js
+/components.js.map
+/constants.js
+/constants.js.map
+# New build folders
+/hooks
+/middlewares
+/utils
+/components
+/constants
+/assets
